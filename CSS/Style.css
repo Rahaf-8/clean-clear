@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container-1 {
+  width: 80%;
+  margin: auto;
+}
+.container-2 {
+  width: 90%;
+  margin: auto;
+}
+
+:root {
+  --main-color: #376b93;
+  --secondary-color: #0ba6df;
+  --main-font: palestine-regular;
+  --secondary-font: "AlHurra Font regular", sans-serif;
+}
+@font-face {
+  font-family: palestine-regular;
+  src: url(../fonts/Palestine-Regular.ttf);
+}
+@font-face {
+  font-family: AlHurra Font regular;
+  src: url(../fonts/AlHurra\ Font\ Regular.ttf);
+}
+
+/* nav section */
+nav .top-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--main-color);
+}
+nav .logo {
+  position: absolute;
+  top: 0;
+  width: 28%;
+  background-color: var(--main-color);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  z-index: 9999;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+nav .logo img {
+  width: 100%;
+  color: black;
+}
+/* header section */
+header .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+header .header-1 {
+  text-align: center;
+}
+
+header .header-content .header-1 h1 {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+header .header-content p {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  margin-top: 20px;
+  position: relative;
+  color: var(--main-color);
+}
+/* header .header-content p::before {
+  content: "";
+  width: 18%;
+  height: 0.04rem;
+  background-color: black;
+  position: absolute;
+  top: 45%;
+  left: 80%;
+}
+header .header-content p::after {
+  content: "";
+  width: 18%;
+  height: 0.04rem;
+  background-color: black;
+  position: absolute;
+  top: 45%;
+  right: 80%;
+} */
+header .header-content .header-2 {
+  margin-top: 20px;
+  background-color: var(--main-color);
+  color: white;
+  font-family: var(--secondary-font);
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+header .header-content .header-2 h3 {
+  font-size: 1.3rem;
+}
+header .header-3 {
+  margin-top: 20px;
+  position: relative;
+}
+header .header-3 ul {
+  display: flex;
+  gap: 7vw;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  position: relative;
+}
+/* header .header-3::after {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: var(--main-color);
+  position: absolute;
+  border-radius: 50%;
+  top: 21%;
+  left: 60%;
+}
+header .header-3::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: var(--main-color);
+  position: absolute;
+  border-radius: 50%;
+  top: 21%;
+  left: 77%;
+}
+
+header .header-3 ul::after {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+header .header-3 ul::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 40%;
+  right: 60%;
+} */
+header .header-3 ul li:hover {
+  color: var(--main-color);
+  font-weight: bold;
+}
+header .header-4 {
+  margin-top: 15px;
+  font-family: var(--secondary-font);
+}
+header .header-4 button {
+  font-size: 1.5rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 15px;
+}
+/* Image section */
+.image-section {
+  margin-top: 40px;
+  height: 30vh;
+  background-image: url(../Images/5812334716210842565.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* section 3 */
+section .title-sec-3 {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--main-font);
+  color: var(--main-color);
+}
+section .title-sec-3 .left-sec h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: var(--main-color);
+}
+section p {
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  text-align: center;
+  margin-top: 15px;
+}
+/* Card Section */
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+gap: 30px;
+    margin-top: 30px;
+}
+.card {
+  width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  text-align: center;
+  padding: 25px 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px var(--main-color);
+}
+.card .card-logo {
+  width: 30%;
+ 
+}
+.card .card-logo img {
+  width: 100%;
+  display: block;
+}
+.card .card-content h3 {
+ font-family: var(--main-font);
+  color: var(--secondary-color);
+  
+}

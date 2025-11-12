@@ -225,14 +225,14 @@ section p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-gap: 30px;
-    margin-top: 30px;
+  gap: 30px;
+  margin-top: 30px;
 }
 .card {
   width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 25px 20px;
   border-radius: 25px;
@@ -240,14 +240,13 @@ gap: 30px;
 }
 .card .card-logo {
   width: 30%;
- 
 }
 .card .card-logo img {
   width: 100%;
   display: block;
 }
 .card .card-content h3 {
- font-family: var(--main-font);
+  font-family: var(--secondary-font);
   color: var(--secondary-color);
-  
+  margin-top: 15px;
 }

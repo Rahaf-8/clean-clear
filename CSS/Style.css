@@ -74,7 +74,7 @@ header .header-content {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 130px;
+  margin-top: 35%;
 }
 header .header-1 {
   text-align: center;
@@ -193,6 +193,10 @@ header .header-4 button {
   padding: 10px 25px;
   border-radius: 15px;
 }
+header .header-4 button a {
+  text-decoration: none;
+  color: white;
+}
 /* Image section */
 .image-section {
   margin-top: 40px;
@@ -210,7 +214,9 @@ section .title-sec-3 {
   color: var(--main-color);
 }
 section .title-sec-3 .left-sec h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 800;
   color: var(--main-color);
 }
 section p {
@@ -240,6 +246,7 @@ section p {
 }
 .card .card-logo {
   width: 30%;
+ 
 }
 .card .card-logo img {
   width: 100%;
@@ -249,4 +256,52 @@ section p {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
   margin-top: 15px;
+}
+
+
+/* responsive */
+@media (min-width: 768px) {
+    nav .top-section{
+        height: 4rem;
+    }
+    nav .logo{
+        width: 20%;
+        top: 0;
+    }
+    header .header-content {
+        margin-top: 25%;
+    }
+  header .header-content .header-1 h1 {
+    font-size: 3.5rem;
+    }
+    image-section{
+        height: 50vh;
+    }
+    header .header-content .header-2 h3{
+        font-size: 1.8rem;
+    }
+    header .header-3 ul{
+        gap: 10vw;
+        font-size: 1.5rem;
+    }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+    nav .top-section{
+        height: 7rem;
+    }
+    .image-section{
+        height: 100vh;
+    }
+  .card {
+    width: 22%;
+  }
 }

@@ -1,4 +1,6 @@
-body {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -214,7 +216,7 @@ section .title-sec-3 {
   color: var(--main-color);
 }
 section .title-sec-3 .left-sec h3 {
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 800;
   color: var(--main-color);
@@ -236,54 +238,54 @@ section p {
 }
 .card {
   width: 90%;
+  height: 18rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 25px 20px;
   border-radius: 25px;
   box-shadow: 0 0 10px var(--main-color);
 }
 .card .card-logo {
-  width: 30%;
- 
+  width: 25%;
 }
 .card .card-logo img {
   width: 100%;
   display: block;
+  padding: 0;
 }
+
 .card .card-content h3 {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
-  margin-top: 15px;
 }
-
 
 /* responsive */
 @media (min-width: 768px) {
-    nav .top-section{
-        height: 4rem;
-    }
-    nav .logo{
-        width: 20%;
-        top: 0;
-    }
-    header .header-content {
-        margin-top: 25%;
-    }
+  nav .top-section {
+    height: 4rem;
+  }
+  nav .logo {
+    width: 20%;
+    top: 0;
+  }
+  header .header-content {
+    margin-top: 25%;
+  }
   header .header-content .header-1 h1 {
     font-size: 3.5rem;
-    }
-    image-section{
-        height: 50vh;
-    }
-    header .header-content .header-2 h3{
-        font-size: 1.8rem;
-    }
-    header .header-3 ul{
-        gap: 10vw;
-        font-size: 1.5rem;
-    }
+  }
+  image-section {
+    height: 50vh;
+  }
+  header .header-content .header-2 h3 {
+    font-size: 1.8rem;
+  }
+  header .header-3 ul {
+    gap: 10vw;
+    font-size: 1.5rem;
+  }
 
   .cards {
     flex-direction: row;
@@ -294,14 +296,40 @@ section p {
     width: 40%;
   }
 }
+
 @media (min-width: 1024px) {
-    nav .top-section{
-        height: 7rem;
-    }
-    .image-section{
-        height: 100vh;
-    }
+  header {
+    height: 60vh;
+  }
+  nav .top-section {
+    height: 6rem;
+  }
+  nav .logo {
+    width: 15%;
+    top: 0;
+  }
+  header .header-1 p {
+    margin-top: 2rem;
+  }
+  header .header-content {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  header .header-3 ul {
+    gap: 15vw;
+    font-size: 1.8rem;
+  }
+
+  .image-section {
+    height: 100vh;
+  }
+  .cards{
+    height: 60vh;
+  }
   .card {
     width: 22%;
+    overflow: hidden;
   }
 }

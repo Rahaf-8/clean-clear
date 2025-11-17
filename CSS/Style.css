@@ -39,7 +39,33 @@ p {
   font-family: AlHurra Font regular;
   src: url(../fonts/AlHurra\ Font\ Regular.ttf);
 }
-
+.AlHurra{
+  font-family:AlHurra Font regular;
+}
+.palestine{
+  font-family: palestine-regular;
+}
+.main-color{
+  color:var(--main-color);
+}
+.secondary-color{
+  color: var(--secondary-color);
+}
+.background-main{
+  background-color: var(--main-color);
+}
+.background-secondary{
+  background-color: var(--secondary-color);
+}
+.w-40{
+width: 20%;
+}
+.display-7{
+  font-size: 1.5rem;
+}
+.small-f{
+  font-size: 0.8rem;
+}
 /* nav section */
 nav .top-section {
   position: fixed;
@@ -183,11 +209,11 @@ header .header-3 ul li:hover {
   color: var(--main-color);
   font-weight: bold;
 }
-header .header-4 {
+.header-4 {
   margin-top: 15px;
   font-family: var(--secondary-font);
 }
-header .header-4 button {
+.header-4 button {
   font-size: 1.5rem;
   background-color: var(--secondary-color);
   color: #fff;
@@ -195,7 +221,7 @@ header .header-4 button {
   padding: 10px 25px;
   border-radius: 15px;
 }
-header .header-4 button a {
+.header-4 button a {
   text-decoration: none;
   color: white;
 }
@@ -206,6 +232,17 @@ header .header-4 button a {
   background-image: url(../Images/5812334716210842565.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+.image-section::after{
+  content: "";
+  height: 1rem;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+  background-color: var(--secondary-color);
 }
 /* section 3 */
 section .title-sec-3 {
@@ -332,4 +369,74 @@ section p {
     width: 22%;
     overflow: hidden;
   }
+}
+.image-2-section{
+  margin-top: 40px;
+  height: 30vh;
+  background-image: url(../Images/Second-Picture.jpg);
+  background-size: cover;
+ background-position: 30% 80%;
+  object-fit: cover;
+  object-position: bottom;
+  position: relative;
+}
+.image-2-section::after{
+  content: "";
+  height: 1rem;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+}
+
+.Our-Services .card-1{
+  width: 100%;
+  height: 10rem;
+  border-radius: 25px;
+  box-shadow: 0 0 10px var(--main-color);
+}
+.our-services-end-section .part-3{
+  height: 2rem;
+}
+
+.opinions .opinion-card{
+  width: 80%;
+  border: 1px solid #c2c2c2;
+  border-radius: 25px;
+  box-shadow: 0 0 5px var(--main-color);
+  padding: 1rem;
+ 
+}
+.carousal-buttons .carousel-control-prev,
+.carousal-buttons .carousel-control-next {
+  width: auto;
+  position: static;
+    opacity: 1 !important;
+}
+
+
+.opinion-card p{
+  width: 100%;
+}
+
+
+footer a i {
+  color:#fff;
+  
+}i {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+ i:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.image-footer{
+  background-color: #ffffff;
+  bottom: 0;
+  left:0;
+  border-bottom-right-radius: 4rem;
+  padding-top: 40px;
 }
